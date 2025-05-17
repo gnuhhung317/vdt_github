@@ -37,20 +37,20 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     try:
         continue_prompting = True
-        messsage = ''
+        validation_messange = ''
         while continue_prompting:
             month = input('\nWhich month you like to filter the data? January, February, March, April, May, or June?\n')
             for i in months:
                 if month.title() == i:
                     continue_prompting = False
-                    messsage = 'Valid month'
+                    validation_messange = 'Valid month'
                     break
-            if messsage == 'Valid month':
+            if validation_messange == 'Valid month':
                 continue
-            messsage = '\nInvalid month. Please enter day in ("January", "February", "March", "April", ' \
+            validation_messange = '\nInvalid month. Please enter day in ("January", "February", "March", "April", ' \
                        '"May", ' \
                        '"June")!\n '
-            print(messsage)
+            print(validation_messange)
     except KeyboardInterrupt:
         print('\nNo input taken\n')
         exit()
@@ -58,17 +58,17 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
     try:
         continue_prompting = True
-        messsage = ''
+        validation_messange = ''
         while continue_prompting:
             day = input('\nWhich day you like to filter the data? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday\n')
             for i in days:
                 if day.title() == i:
                     continue_prompting = False
-                    messsage = 'Valid day'
+                    validation_messange = 'Valid day'
                     break
-            if messsage != 'Valid day':
-                messsage = '\nInvalid day. Please enter day in ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")!\n'
-                print(messsage)
+            if validation_messange != 'Valid day':
+                validation_messange = '\nInvalid day. Please enter day in ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")!\n'
+                print(validation_messange)
     except KeyboardInterrupt:
         print('\nNo input taken\n')
         exit()
