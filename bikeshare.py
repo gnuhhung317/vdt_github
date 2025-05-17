@@ -36,13 +36,13 @@ def get_filters():
 
     # get user input for month (all, january, february, ... , june)
     try:
-        check_loop = True
+        continue_prompting = True
         messsage = ''
-        while check_loop:
+        while continue_prompting:
             month = input('\nWhich month you like to filter the data? January, February, March, April, May, or June?\n')
             for i in months:
                 if month.title() == i:
-                    check_loop = False
+                    continue_prompting = False
                     messsage = 'Valid month'
                     break
             if messsage == 'Valid month':
@@ -57,13 +57,13 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     try:
-        check_loop = True
+        continue_prompting = True
         messsage = ''
-        while check_loop:
+        while continue_prompting:
             day = input('\nWhich day you like to filter the data? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday\n')
             for i in days:
                 if day.title() == i:
-                    check_loop = False
+                    continue_prompting = False
                     messsage = 'Valid day'
                     break
             if messsage != 'Valid day':
