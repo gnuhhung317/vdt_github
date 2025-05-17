@@ -7,7 +7,7 @@
 BikeShare
 
 ### Description
-This project is to learn about git and github commands
+This project is to analyzes bikeshare data in three major US cities: Chicago, New York, and Washington, based on CSV files containing historical data.
 
 ### Files used
 chicago.csv
