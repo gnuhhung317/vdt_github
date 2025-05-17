@@ -10,8 +10,11 @@ Replace the Project Title
 This project is to learn about git and github commands
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+bikeshare.py
+.gitignore
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+I was inspired by [this repo](https://github.com/miennt17/vdt_github)
