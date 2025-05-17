@@ -7,7 +7,7 @@
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+This project is to learn about git and github commands
 
 ### Files used
 Include the files used
